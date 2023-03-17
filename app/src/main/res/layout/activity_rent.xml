@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rent">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:text="Rent"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0"
+        />
+    <EditText
+        android:id="@+id/et0"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+
+        android:hint="type rent ID here"
+        android:inputType="number"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.2" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+
+        android:hint="type book's ID here"
+        android:inputType="number"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et0"
+
+        app:layout_constraintVertical_bias="0" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+
+        android:hint="type user's ID here"
+        android:inputType="text"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et1"
+
+        app:layout_constraintVertical_bias="0" />
+
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+
+        android:hint="type date"
+        android:inputType="text"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et2"
+
+        app:layout_constraintVertical_bias="0" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="save"
+        android:backgroundTint="@color/black"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et3"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.2"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="edit"
+        android:backgroundTint="@color/black"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et3"
+        app:layout_constraintStart_toEndOf="@+id/btn1"
+
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.6"
+        />
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="delete"
+        android:backgroundTint="@color/black"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn1"
+
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.2"
+        />
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="search"
+        android:backgroundTint="@color/black"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn3"
+        app:layout_constraintTop_toBottomOf="@+id/btn2"
+
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.6"
+        />
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="list"
+        android:backgroundTint="@color/black"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn3"
+
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.5"
+        />
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="users"
+        android:backgroundTint="@color/teal_700"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn5"
+
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.1"
+        />
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="books"
+        android:backgroundTint="@color/teal_700"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn6"
+        app:layout_constraintTop_toBottomOf="@+id/btn5"
+
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.8"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
