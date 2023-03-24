@@ -20,7 +20,7 @@ EditText id, name, email, pass;
 RadioButton activo, sancion;
 Button save, edit, delete, search, list, books, rent;
 
-bdLibrary bdLibrary = new bdLibrary(this, "librarydb" , null, 1);
+bdLibrary bdLibrary = new bdLibrary(this, "librarydb" , null, 2);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -131,6 +131,12 @@ bdLibrary bdLibrary = new bdLibrary(this, "librarydb" , null, 1);
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),Rent.class));
+            }
+        });
+        list.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),listUser.class));
             }
         });
     }

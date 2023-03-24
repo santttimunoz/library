@@ -19,7 +19,7 @@ public class Book extends AppCompatActivity {
     RadioButton available, unAvailable;
     Button save, edit, search, delete, list, users, rent;
 
-    bdLibrary bdLibrary = new bdLibrary(this, "librarydb" , null, 1);
+    bdLibrary bdLibrary = new bdLibrary(this, "librarydb" , null, 2);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +47,7 @@ public class Book extends AppCompatActivity {
                 }else if(!name.getText().toString().isEmpty() && !cost.getText().toString().isEmpty()){
                     //este else verifica que no me deje guardar un nombre repetido
                     SQLiteDatabase sdlibrary = bdLibrary.getReadableDatabase();
-                    String query = "select idBook, name from book where idBook = '"+id.getText().toString()+"'+&&+'"+name.getText().toString()+"'";
+                    String query = "select idBook, name from book where idBook = '"+id.getText().toString()+"'";
                     Cursor cBooks = sdlibrary.rawQuery(query, null);
                     if(cBooks.moveToFirst()){ //si encuentra un libro registrado
                         Toast.makeText(Book.this, "Book is already saved", Toast.LENGTH_SHORT).show();
@@ -124,6 +124,12 @@ public class Book extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),Rent.class));
+            }
+        });
+        list.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),listBooks.class));
             }
         });
     }

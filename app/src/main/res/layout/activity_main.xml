@@ -103,7 +103,7 @@
             android:id="@+id/rb1"
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:text="activo"
+            android:text="active"
 
             />
 
@@ -111,7 +111,7 @@
             android:id="@+id/rb2"
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:text="sancion"/>
+            android:text="penalized"/>
 
     </RadioGroup>
 
